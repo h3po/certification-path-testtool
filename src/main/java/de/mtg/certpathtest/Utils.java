@@ -1,10 +1,10 @@
 
 package de.mtg.certpathtest;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -1055,8 +1055,8 @@ public class Utils
     {
         JAXBContext jaxbContext = JAXBContext.newInstance(Certificate.class);
         Marshaller marshaller = jaxbContext.createMarshaller();
-        marshaller.setProperty(javax.xml.bind.Marshaller.JAXB_ENCODING, "UTF-8");
-        marshaller.setProperty(javax.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        marshaller.setProperty(jakarta.xml.bind.Marshaller.JAXB_ENCODING, "UTF-8");
+        marshaller.setProperty(jakarta.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         marshaller.marshal(certificate, baos);
         baos.flush();
@@ -1097,8 +1097,8 @@ public class Utils
 
         JAXBContext jaxbContext = JAXBContext.newInstance(PKIObjects.class);
         Marshaller marshaller = jaxbContext.createMarshaller();
-        marshaller.setProperty(javax.xml.bind.Marshaller.JAXB_ENCODING, "UTF-8");
-        marshaller.setProperty(javax.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        marshaller.setProperty(jakarta.xml.bind.Marshaller.JAXB_ENCODING, "UTF-8");
+        marshaller.setProperty(jakarta.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         StringWriter stringWriter = new StringWriter();
         marshaller.marshal(pkiObjects, stringWriter);
         stringWriter.flush();

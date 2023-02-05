@@ -5,5 +5,5 @@
 // Generated on: 2016.12.06 at 07:49:26 AM CET 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://bsi.bund.de/TR03124", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://bsi.bund.de/TR03124", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package de.mtg.tr03124;

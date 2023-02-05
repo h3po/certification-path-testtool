@@ -30,7 +30,6 @@
         <apacheds-all.version>2.0.0-M24</apacheds-all.version>
 
         <junit.jupiter.version>5.6.2</junit.jupiter.version>
-
     </properties>
 
 
@@ -188,6 +187,18 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+
+<dependency>
+    <groupId>jakarta.xml.bind</groupId>
+    <artifactId>jakarta.xml.bind-api</artifactId>
+    <version>4.0.0</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-impl</artifactId>
+    <version>4.0.0</version>
+    <scope>runtime</scope>
+</dependency>
 
     </dependencies>
 

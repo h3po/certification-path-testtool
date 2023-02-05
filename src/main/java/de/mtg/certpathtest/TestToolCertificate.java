@@ -27,7 +27,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.StringTokenizer;
 
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 
 import org.bouncycastle.asn1.ASN1Encoding;
 import org.bouncycastle.asn1.ASN1InputStream;
